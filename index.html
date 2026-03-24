@@ -532,7 +532,7 @@
 
     .footer-logo {
       font-family: 'Cormorant Garamond', serif;
-      font-weight: 300;
+      font-weight: 300;4
       font-size: 18px;
       letter-spacing: 14px;
       color: var(--cream);
@@ -676,8 +676,8 @@
       <form class="waitlist-form" id="hero-form" action="https://formspree.io/f/mvzweajp" method="POST">
         <input type="email" name="email" placeholder="your@email.com" required />
         <button type="submit">Join the waitlist</button>
-      </form>
-      <p class="form-note">Calgary beta &mdash; first 500 members only &middot; Free</p>
+      </form> 
+      <p class="success-message" id="hero-success-msg">You're in. We'll be in touch. &#10022;</p>
     </div>
     <div class="scroll-hint">
       <span>Explore</span>
@@ -903,7 +903,7 @@
       });
     }
 
-    handleForm(document.getElementById('hero-form'), null);
+    handleForm(document.getElementById('hero-form'), 'hero-success-msg');
     handleForm(document.getElementById('waitlist-form'), 'success-msg');
   </script>
 
